@@ -6,15 +6,15 @@ class universty:
    def add_department(self,department_name)
       if department_name not in  self.department:
          self.department[department_name] = department(department_name)
-            print(f"Department {department_name} added to {self.name} university")
+         print(f"Department {department_name} added to {self.name} university")
       else:
-            print(f"Department {department_name} already exists in {self.name} university")
+         print(f"Department {department_name} already exists in {self.name} university")
 
    def allocate_asset( self, department_name, asset_name, asset_type, asset_value):
       if department_name in self.department:
          self.department[department_name].allocate_asset(asset_name, asset_type, asset_value)
       else:
-            print(f"department'{department_name}' does not exist in {self.name} university")
+          print(f"department'{department_name}' does not exist in {self.name} university")
 
 class department:
    def __init__(self,name):
@@ -23,7 +23,7 @@ class department:
 
    def allocate_asset(self,asset):
          self.allocate_asset.append(asset)
-            print(f"{asset} allocated to {self.name}.")
+         print(f"{asset} allocated to {self.name}.")
 
 class Asset:
    def __init__(self, asset_name, asset_type, asset_value):
