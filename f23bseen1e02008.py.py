@@ -41,8 +41,10 @@ class Asset:
    uni.add_department("civil engineering")
 
 #allocating assets
-   uni. allocate_asset("software engineering", "laptop", "computer", "lab")
-   uni. allocate_asset("civil engineering", "laptop", "computer","geometroy")
+  asset1=Asset("class room","computer lab","programers","laptops")
+  asset2=Asset("class room","geomatroy","civil engineers","equipment")
+   uni. allocate_asset("software engineering", asset1)
+   uni. allocate_asset("civil engineering", asset2)
 
 
 
